@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TagPet - Quem ama protege. Quem ama usa TagPet.</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <style>
+        @font-face {
+            src: url("fonts/MyriadPro-Regular.otf");
+            font-family: 'Myriad Pro';
+        }
+        @font-face {
+            SRC:url("fonts/fa-solid-900.ttf");
+            font-family: 'FontAwesome';
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Myriad Pro';
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1 {
+            text-align: center;
+            margin-top: 32px;
+            color: #BD0000;
+            font-size: 34px;
+        }
+
+        hr {
+            height: 7px;
+            background-color: #BD0000;
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        iframe {
+            margin-left: 32px;
+            margin-right: 32px;
+            margin-bottom: 32px;
+        }
+       
+        .autoplay {
+            max-width: 1200px;
+            margin-left: 85px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        #botao {
+            border-radius: 8px;
+            border: none;
+            color: white;
+            height: 64px;
+            width: 287px;
+            font-size: 22px;
+            background-color: #BD0000;
+            margin-left: 128px;
+            margin-bottom: 32px;
+            text-transform: uppercase;
+
+        }
+        .card {
+            width: 300px;
+            text-align: center;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .card img {
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        .card h2 {
+            margin-bottom: 32px;
+            font-size: 24px;
+        }
+
+        .card div {
+            margin-bottom: 32px;
+        }
+      
+        .container {
+            width: 1366px;
+            margin: 32px auto;
+        }
+        
+        .pingentes img{
+            margin-top: 32px;
+        }
+        .preco {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .rodape {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+
+        .slick-prev,
+    .slick-next {
+        position: absolute;
+        color: #BD0000;
+    }
+
+    .slick-prev:after {
+        content: "\f104";
+        font: 40px/1 'FontAwesome';
+        margin-left: -80px;
+        }
+
+    .slick-next:after {
+        content: "\f105";
+        font: 40px/1 'FontAwesome';
+        margin-right: 40px;
+    }
+
+        .slick-prev:hover:after,
+        .slick-next:hover:after {
+            color: #7e7e7e;
+        }
+
+        #banner {
+            background-image: url("Biblioteca/ativo 1-100.jpg");
+            background-repeat: no-repeat;
+            height: 656px;
+        }
+        
+        #banner nav {
+            background-color: rgba(237, 84, 84, 0.2);
+            width: 1366px;
+            height: 69px;
+        }
+
+        #banner img {
+            margin-top: 32px;
+            margin-left: 32px;
+        }
+
+        #de {
+            font-size: 24px;
+        }
+        #direita {
+            margin-left: 750px;
+        }
+
+        #direita li {
+            margin: 16px 32px 0px 32px;
+        }
+        #esquerda li {
+            margin: 16px 0 0 32px;
+        }
+        #frete {
+            color:#7e7e7e;
+            font-size: 18px;
+        }
+        #mapa_do_site {
+            background-color: rgba(237, 84, 84, 0.4);
+            width: 1366px;
+            height: 302px;
+        }
+        #mapa_do_site div {
+            margin-left: 230px;
+        }
+        #mapa_do_site h3{
+            font-size: 11px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: lighter;
+
+        }
+        #mapa_do_site section {
+            display: inline-block;
+            vertical-align: top;
+            padding: 32px;
+            
+        }
+        #mapa_do_site ul{
+            list-style-type: none;
+            width: 190px;
+        }        
+        
+        #mapa_do_site li{
+            color: #ffffff;
+            font-size: 11px;
+            padding: 10px;
+            text-align: start;
+            margin-left: -8px;
+            font-weight: lighter;
+        }
+        #menu ul {
+            list-style-type: none;
+            display: inline;
+        }
+
+        #menu li {
+            display: inline-block;
+            color: #ffffff;
+            font-size: 32px;
+            vertical-align: middle;
+        }
+        .menu li:hover {
+            background-color: #7e7e7e;
+
+        }
+     
+        #por {
+            color: #BD0000;
+            font-size: 24px;
+        }
+        #produto div {
+            display: inline-block;
+            width: 640px;
+            margin: 0 0 0 32px;
+        }
+        #propriedades {
+            width: 1280px;
+            margin-left: 80px;
+            align-content: center;
+        }
+
+        #propriedades div {
+            height: 264px;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 32px;
+
+        }
+        #propriedades hr {
+            margin-top: 32px;
+        }
+        #secao_vendas{
+            display: inline;
+            text-align: center;
+        }
+        #seção_vendas img{
+            margin-top: 32px;
+        }
+        #texto {
+            vertical-align: top;
+
+        }
+        #texto>* {
+            margin: 32px 16px 0 32px;
+
+        }
+        #texto p {
+            margin-top: 16px;
+            margin-right: 48px;
+        }
+
+        #texto footer {
+            margin: 16px 32px 0 32px;
+        }
+
+        #texto ul {
+            padding: 33px 32px 0px 32px;
+        }
+        #topo {
+            width: 1366px;
+        }
+    
+        #video iframe{
+            margin:32px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header id="topo">
+            <div id="banner">
+                <nav id="menu">
+                    <ul id="esquerda">
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                    <ul id="direita">
+                        <li><a href="#">Comprar</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+                <img src="Biblioteca/logotagpet1.png" alt="logotipo TagPet" height="122" width="418">
+            </div>
+        </header>
+        <main>
+            <section id="produto">
+                <h1>Quem ama Protege. Quem ama usa TagPet.</h1>
+                <div id="texto">
+                    <header>
+                        <h2>Facilite a identificação e controle o histórico de vida do seu melhor amigo!</h2>
+                    </header>
+                    <div>
+                        <p>Para isso, o pingente TagPet possui um código de barras 2d(QrCode), podendo ser feita a leitura
+                            deste código por um celular carregando imediatamente os dados do pet e do seu proprietário.
+                        </p>
+                        <ul>
+                            <li>Facilidade de uso.</li>
+                            <li>Rápida atualização dos dados do pet e do proprietário.</li>
+                            <li>Geolocalização.</li>
+                            <li>Integração com Redes Sociais.</li>
+                            <li>Diversos serviços e ofertas especiais.</li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <button type="button" id="botao">Cadastre-se</button>
+                    </footer>
+                </div>
+                <div id="video">
+                    <iframe width="560" height="342" src="https://www.youtube.com/embed/L9XuAB2jPxQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </section> <!--Fim Produto-->
+            <section id="pets">
+                <hr>
+                <h1>Pet's cadastrados</h1>
+                <div class="autoplay">
+                    <div><img src="Biblioteca/pet1.png" height="280" alt="cachorro yorkshire usando tagpet"></div>
+                    <div><img src="Biblioteca/pet2.png" height="280" alt="cachorro dachshund usando tagpet"></div>
+                    <div><img src="Biblioteca/pet3.png" height="280" alt="cachorro husky albino usando tagpet"></div>
+                    <div><img src="Biblioteca/pet4.png" height="280" alt="coelho fuzzy lop usando tagpet"></div>
+                    <div><img src="Biblioteca/pet5.png" height="280" alt="gato siamês usando tagpet"></div>
+                    <div><img src="Biblioteca/pet6.png" height="280" alt="cachorro vira-lata usando tagpet"></div>
+                    <div><img src="Biblioteca/pet7.png" height="280" alt="cachorro border collie usando tagpet"></div>
+                    <div><img src="Biblioteca/pet8.png" height="280" alt="cachorro pinscher usando tagpet"></div>
+                </div>
+                <hr>
+            </section> <!--Fim Pets-->
+            <div id="propriedades">
+                <div>
+                <div class="card">
+                    <img src="Biblioteca/Ativo_3.png" height="46" alt="icone celular">
+                    <h2>Acesse de qualquer local</h2>
+                    <p>TagPet pode ser acessado do seu smartphone, pc, tablet de forma simples, você tem acesso as informações
+                        do seu pet quando e onde precisar.</p>
+                </div>
+                <div class="card">
+                    <img src="Biblioteca/Ativo_2.png" height="46" alt="icone coração">
+                    <h2>Controle de vida do Pet</h2>
+                    <p>Controle todo o histórico de vida do seu Pet, cadastre suas vacinas, controle de peso, cio, vermifugação,
+                        exames e muitos mais.</p>
+                </div>
+                <div class="card">
+                    <img src="Biblioteca/Ativo_4.png" height="46" alt="icone agenda">
+                    <h2>Agenda</h2>
+                    <p>Controle a agenda do seu pet referente a exames, vacinas, receba avisos por sms, não deixe passar nada,
+                        saúde é coisa séria.</p>
+                </div>
+                <div class="card">
+                    <img src="Biblioteca/Ativo_1.png" height="46" alt="icone dinheiro">
+                    <h2>Descontos e Promoções</h2>
+                    <p>Quem não gosta de economizar não é mesmo, com TagPet você ganha descontos e participa de promoções de
+                        diversos parceiros.
+                    </p>
+                </div> 
+                </div>
+            </div> <!--Fim propriedades-->
+            <hr>
+            <div id="secao_vendas">
+                <div>
+                    <header>
+                        <h1>Para pet's de pequeno porte</h1>
+                    </header>
+                    <div class="pingentes">
+                        <img src="Biblioteca/Imagem1.png" alt="pingente de alumínio com logo tagpet na cor azul">
+                        <img src="Biblioteca/Imagem3.png" alt="pingente de alumínio com logo tagpet na cor azul">
+                    </div>
+                    <p>Seu pet é macho ou fêmea de porte pequeno ou médio? Adiquira o pingente de alumínio 0,28mm na cor azul ou rosa, resistente, à prova<br> d'àgua, coloque o pingente na coleira do seu amigo e fique tranquilo</p>
+                    <footer>
+                        <div class="rodape">
+                            <div>
+                                <p id="de" class="preco">De R$15,90</p>
+                                <p id="por" class="preco">Por R$9,90</p>
+                            </div>
+                            <div id="frete"><p>Frete Grátis</p></div>
+                            <div><img src="Biblioteca/pagseguro209x48.gif"></div>
+                        </div>
+                        <div class="rodape">
+                            <button type="button" id="botao">Comprar</button>
+                        </div>
+                    </footer>
+                </div>
+                <div>
+                    <header>
+                        <h1>Para pet's de grande porte</h1>
+                    </header>
+                    <div class="pingentes">
+                        <img src="Biblioteca/Imagem4.png" alt="pingente resinado com logo tagpet na cor azul">
+                        <img src="Biblioteca/Imagem2.png" alt="pingente resinado com logo tagpet na cor azul">
+                    </div>
+                    <p>Seu pet é macho ou fêmea de porte pequeno ou médio? Adiquira o pingente de alumínio 0,28mm na cor azul ou rosa, resistente, à prova<br> d'àgua, coloque o pingente na coleira do seu amigo e fique tranquilo</p>
+                    <footer>
+                        <div class="rodape">
+                            <div>
+                                <p id="de" class="preco">De R$25,90</p>
+                                <p id="por" class="preco">Por R$15,90</p>
+                            </div>
+                            <div id="frete"><p>Frete Grátis</p></div>
+                            <div><img src="Biblioteca/pagseguro209x48.gif"></div>
+                        </div>
+                        <div class="rodape">
+                            <button type="button" id="botao">Comprar</button>
+                        </div>
+                    </footer>
+                </div>
+            </div> <!--Fim seção vendas-->
+            <div id="mapa_do_site">
+                <div>
+                <section>
+                    <h3>Para você</h3>
+                    <ul>
+                        <li>Comprar</li>
+                        <li>Criar Conta</li>
+                        <li>Login</li>
+                        <li>Dúvidas Frequentes</li>
+                        <li>Adotar Pet</li>
+                        <li>Pet Para Venda</li>
+                        <li>Empresas e Prestadores de Serviços</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Sobre Nós</h3>
+                    <ul>
+                        <li>Quem Somos</li>
+                        <li>Termos de Uso</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Para Empresas</h3>
+                    <ul>
+                        <li>Sobre Nós</li>
+                        <li>Cadastrar</li>
+                    </ul>        
+                </section>
+                <section>
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Google+</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </section>
+                </div>
+            </div> <!--Fim mapa do site-->
+        </main>
+    </div> <!--Fim container-->
+
+    <script src="html://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="html://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+        $('.autoplay').slick({
+            boolean:true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+        
+    </script>
+
+</body>
+</html>
